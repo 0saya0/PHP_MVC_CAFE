@@ -1,0 +1,97 @@
+/* contact.phpのcss */
+.wrapper{
+    border: solid 1px gray;
+    border-radius: 10px;
+    margin: 50px 180px;
+}
+
+.wrapper h1{
+    text-align: center;
+    margin: 20px 0 40px 0;
+    border-bottom: solid 2px gray;
+}
+
+.form-content,
+.form-content dt,
+.form-content dd{
+    text-align: center;
+}
+
+.form-content input,
+.form-content textarea,
+.form-content button{
+    width: 40%;
+    border: solid 1px gray;
+    border-radius: 5px;
+}
+
+/* エラー(JS)の場合の装飾 */
+#name-error,
+#kana-error,
+#tel-error,
+#email-error,
+#body-error{
+    color: red;
+}
+
+#name-error.is-error::before,
+#kana-error.is-error::before,
+#tel-error.is-error::before,
+#email-error.is-error::before,
+#body-error.is-error::before{
+    content: "\A";
+    white-space: pre;   
+}
+
+
+/* エラー(PHP)の場合の装飾 */
+.error-php{
+    color: red;
+}
+
+/* DBテーブル表示 */
+table{
+    margin: 0 auto;
+    width: 60%;
+}
+
+.table-title{
+    background-color: lightgray;
+}
+
+.reference{
+    margin: 40px 0;
+}
+
+.reference th,
+.reference td{
+    border: solid 1px gray;
+    text-align: center;
+
+}
+
+/* confirm.phpのcss */
+.confirm-dt{
+    border-bottom: solid 1px gray;
+}
+
+.new-line{
+    white-space: pre-wrap;
+}
+
+.button{
+    justify-content: center;
+    /* display: flex; */
+    /* width: 100%; */
+    padding: 5px;
+}
+
+.button dd{
+    margin: 10px;
+}
+
+
+/* complete.phpのcss */
+.wrapper p{
+    text-align: center;
+}
